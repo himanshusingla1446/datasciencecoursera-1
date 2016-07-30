@@ -56,7 +56,10 @@ tidy_data <- merge(tidy_data,activity_label)
 # reorder columns in tidy data set
 tidy_data <- tidy_data[c(1,5,2,3,4)]
 
-View(combined_data)
-View(tidy_data)
-
 setwd(store_wd) 
+
+# write data to the .csv file.
+write.csv(combined_data,"combined_data.csv")
+write.csv(tidy_data,"tidy_data.csv")
+
+
