@@ -59,7 +59,7 @@ tidy_data <- tidy_data[c(1,5,2,3,4)]
 setwd(store_wd) 
 
 # write data to the .csv file.
-write.csv(combined_data,"combined_data.csv")
-write.csv(tidy_data,"tidy_data.csv")
+write.table(combined_data,"combined_data.txt",row.name= FALSE)
+write.table(tidy_data,"tidy_data.txt",row.name = FALSE)
 
 
